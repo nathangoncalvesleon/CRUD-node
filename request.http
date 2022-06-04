@@ -1,0 +1,29 @@
+POST http://localhost:4002/cadastrar HTTP/2.0
+content-type: application/json
+
+{
+    "nome": "teste21",
+    "data": "01/01/2020",
+    "valor": "100"
+}
+
+
+####
+
+GET  http://localhost:4002/cadastros HTTP/2.0
+
+####
+
+GET http://localhost:4002/cadastros/941de109-6875-4012-9a63-52a25a99d748 HTTP/2.0
+
+
+####
+
+PUT http://localhost:4002/cadastros/941de109-6875-4012-9a63-52a25a99d748 HTTP/2.0
+content-type: application/json
+
+{
+    "nome": "teste222",
+    "data": "01/01/2020",
+    "valor": "120"
+}
